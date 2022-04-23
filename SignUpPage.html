@@ -1,0 +1,119 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+
+    <style>
+        #main{display: block;
+            box-sizing: border-box;}
+
+         ul li a {text-decoration: none;
+                  float: left;
+                  padding: 12px;
+                 color: white;
+                    background-color: rgb(59, 59, 247);}
+
+        @media screen and (max-width : 600px) {
+
+            p {
+                font-size: 16px ;
+                color: blue;
+            }
+
+            form {color: brown;
+                background-color: aqua;
+                width: 400px;}
+
+            #fdiv{width: 300px;}
+            
+        }
+
+         ul li {list-style: none;
+                margin: -1 -42;}
+
+        ul li a:hover {background-color: white;
+                        color: blue;}
+    
+         h1{color: white;
+        font-size: 50;} 
+
+        body{margin: 0;
+            background-color: rgb(135, 255, 191);}
+
+        #fdiv{border: 2px solid black;
+             display:flex
+             width: 100%;
+             box-sizing: border-box;
+             background:linear-gradient(rgb(90, 90, 244) , rgb(42, 42, 239))}
+    
+            form { width:fit-content;
+                 text-align: left;
+                display: block;
+                box-sizing: border-box;
+                margin-top:140;
+                float: left;
+                box-shadow: 0px 0px 12px 3px white ;
+                background-color: rgb(128, 255, 32);}
+
+
+        iframe{margin-top: 120;
+                margin-left: 20;
+                height: 300;
+                width: 400;}
+        #x:hover{color: white;}
+        
+        
+        
+
+        label:hover{color: white;}
+
+        input:hover{color: black;}
+        
+    </style>
+</head>
+
+<body>
+    <div id="main">
+    <div id="fdiv">
+        <h1>Developers Zone.</h1>
+        <ul id="contents">
+                <li><a href="#">COURSES</a></li>
+                <li><a href="#">KNOW MORE</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+    </div>
+    
+        <form>
+            <br>
+            <label>First Name</label>
+            <input type="text" placeholder="Enter Username">
+            <br>
+            <br>
+            <label>Last Name</label>
+            <input type="text" placeholder="Enter Username">
+            <br>
+            <br>
+            <label>Password</label>
+            <input type="password"  maxlength="10">
+            <br>
+            <br>
+            <label>Repeat Password</label>
+            <input type="password" maxlength="10">
+            <br>
+            <br>
+            <input type="radio">Male
+            <input type="radio">Female
+            <input type="radio">Other
+            <br>
+            <br>
+            <input id="x" style="margin-left: 100; border: black 2px solid; background-color: rgb(135, 255, 191);; width: 100;" type="submit" value="Register">
+        </form>
+
+    
+    
+        <iframe src="https://www.youtube.com/embed/0uB0b4rjuhM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</body>
+</html>

@@ -1,0 +1,175 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body{margin: 0%;
+            overflow-y: auto;
+            overflow-x: hidden;}
+
+        nav ul li a{text-decoration: none;
+                    color: white;
+                    padding: 16px 8px;
+                    line-height: 2;}
+
+        nav ul li{list-style: none;
+                 float: left;}
+
+        .menuitems{margin-left: 70%;
+                    position: relative;
+                    bottom: 50px;
+                    flex-wrap: wrap;}
+
+        img:hover {zoom: 100%;
+                  box-shadow: 0 0 19px black;}
+
+        
+
+        #navdiv{width: 100%;
+                margin: 0%;
+                border:2px solid black;
+                height: fit-content;
+                background-color: black;
+                padding: 32px 23px;}
+
+        h1{color: white;
+            font-size: 32;
+            width: fit-content;}
+
+        h1:hover{color: blue;
+                background-color: white;}
+
+        li a:hover{color: blue;
+                    background-color: white;}
+
+        #bodyy{display: flex;
+                flex-wrap: wrap;
+                flex-direction: row;
+                justify-content: space-evenly;
+                justify-items: center;
+                box-sizing: border-box;
+                box-shadow: 0px 1px 11px black;
+                width: 100%;
+                padding: 20px;}
+
+        .insbody{border: 2px solid black;
+                width: min-content;
+                height: max-content;
+                margin-top: 40;
+                margin-left: 25;
+                text-align: center;
+                box-shadow: 0px 1px 13px black;
+            }
+
+        button{padding: 20px;
+                border-radius:10px;
+                width: 120px;}
+
+        button:hover{background-color: black;
+                    color: white;}
+
+        #butdivv{border:none;
+                text-align: center;}
+
+
+        @media screen  and ( max-width: 600px){
+
+
+            #bodyy{display: block;
+                justify-items: center;
+                box-sizing: border-box;
+                box-shadow: 0px 0px 1px black;
+                width: 100%;
+                padding: 5px;}
+
+
+            nav ul li a{text-decoration: none;
+                    color: white;
+                    padding: 4px 2px;
+                    line-height: 0;}
+
+            nav ul li{list-style: none;
+                text-align: left};
+
+            .insbody{
+                width: 100%;
+                height: 100%;
+                margin-top: 40;
+                margin-left: 25;
+                text-align: center;
+                box-shadow: 0px 1px 3px black;}
+               
+             h1{color: white;
+            font-size: 16;
+            width: 100%;
+            display: block;}
+
+            #navdiv{width: 100%;
+                text-align: center;
+              }
+
+            #insbody{width: 400px;
+                    display: block;
+                    height: fit-content;
+                    border: 2px solid black;
+                    width: 100%;
+                    text-align: center;
+                }
+
+
+            img{width: 380px;
+                display: block;
+                height: 300px;
+                }
+
+                
+            
+        }
+    </style>
+</head>
+<body>
+    <div id="navdiv"> 
+        <nav>
+            <h1>Tourist Destinations in Kashmir.</h1>
+            <ul class="menuitems">
+                <li><a href="#">Go Abroad</a></li>
+                <li><a href="#">Membership</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+         </nav>
+    </div>
+    <div id="bodyy">
+
+
+                
+        <div class="insbody">
+                <LABEL>GULMARG</LABEL>
+               <img src="https://i.ytimg.com/vi/8-6ORyUirSw/maxresdefault.jpg" height="300px" width="460">
+        </div>
+        <div class="insbody">
+            <LABEL>PAHALGAM</LABEL>
+            <img src="https://img.traveltriangle.com/blog/wp-content/uploads/2019/06/Pahalgam_cover.jpg" height="300px" width="460"></div>
+        <div class="insbody">
+            <LABEL>DAL LAKE</LABEL>
+            <img src="https://www.budgettours.co.in/wp-content/uploads/2015/09/dallake.jpg" height="300px" width="450">
+        </div>
+        <div class="insbody">
+            <LABEL>TULIP GARDEN</LABEL>
+            <img src="https://th.bing.com/th/id/R.236d2fce8048ad9397a641f618075623?rik=162%2f%2bneRu6YQJA&riu=http%3a%2f%2f4.bp.blogspot.com%2f-A5mBMdSIAiI%2fT_ymkZkmdcI%2fAAAAAAAABLY%2faJwFWzkLgrE%2fs1600%2fTulips%2bHolland.jpg&ehk=GYwFJxB1qm9r%2b5Z8j%2b65nM3b%2b6INximiqTWq60RY%2bwo%3d&risl=&pid=ImgRaw&r=0" height="300px" width="450">
+        </div>
+        <div class="insbody">
+            <LABEL>AHARBAL</LABEL>
+            <img src="https://vargiskhan.com/log/wp-content/uploads/2018/10/aharbal-waterfall-2.jpg" height="300px" width="450">
+        </div>
+</div>
+    <br>
+    <div id = "butdivv">
+    <a href=""><button ><i class="fa fa-facebook-official"></i></button></a>
+    <a  href=""><button><i class="fa fa-google"></i></button></a>
+    <a  href=""><button><i class="fa fa-instagram"></i></button></a>
+    </div>
+    
+</body>
+</html>
