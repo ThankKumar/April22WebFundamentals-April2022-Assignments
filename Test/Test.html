@@ -4,6 +4,7 @@
       body {
         background-image: url("https://i.pinimg.com/originals/61/79/ba/6179bac03a8f13857c55d90e3ceaf063.jpg");
         overflow: hidden;
+        box-sizing: border-box;
       }
       html {
         font-family: "Square Peg", cursive;
@@ -16,6 +17,7 @@
         position: relative;
         top: 10%;
         left: 40%;
+        box-sizing: border-box;
       }
 
       p {
@@ -36,6 +38,7 @@
         position: relative;
         left: 49%;
         bottom: 110;
+        box-sizing: border-box;
       }
 
       #geek {
@@ -51,7 +54,10 @@
         position: relative;
         left: 40%;
         bottom: 120;
+        box-sizing: border-box;
       }
+
+      #main{box-sizing: border-box;}
     </style>
   </head>
   <body>
@@ -69,13 +75,12 @@
       <h1 style="color: green">Geekster</h1>
       <p>From coding to soft skills , we <br />will provide you every thing.</p>
     </div>
-    <div>
+    <div id="main">
       <img
         style="position: relative; left: 40%"
         src="https://i.ytimg.com/vi/CvltMRiVNME/maxresdefault.jpg"
         width="400"
-        height="100"
-      />
+        height="100"/>
       <h2 style="position: relative; left: 50%; bottom: 110">I am Altaf</h2>
       <p id="botp">Software Developer.</p>
 
