@@ -1,0 +1,242 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Altaf Travel Agency</title>
+    <style>body{margin: 0%;
+        overflow-x: hidden;
+        background: url("https://wallpapercave.com/wp/s9nIMMH.jpg");
+        background-size: cover;}
+    
+    html{font-family: 'Yanone Kaffeesatz', sans-serif;
+        line-height: 1;
+        letter-spacing: 2;
+        color: rgb(7, 7, 98);
+        font-size: 20;}
+    
+    
+    #head-div{background-color: black;
+            color: white;
+            margin: 0%;
+            font-size: 16;
+            width: 100%;
+            padding: 9px 20px;}
+    
+    a{text-decoration: none;
+        padding: 9px;
+        color: white;
+        position: relative;
+        left: 60%;
+        bottom: 50;
+        transition: background-color 1800ms, border-radius 2500ms , color 300ms ease-out, box-shadow 1s;}
+    
+    span a:hover{background-color: rgb(236, 236, 0);
+            color: black;
+            box-shadow: 0px 1px 17px white;
+            border-radius: 55px;}
+    
+    #body-div{border: none;
+             margin-left: 13%;
+             height: 500;
+             width: fit-content;
+             font-size: 20;
+             position: relative;
+             top: 50px;}
+    
+    input{border-radius: 30px;
+         width: 200;
+         height: 32;}
+    
+    .ipdown{background-color: white;
+            color: black;}
+    
+    .ipdown{transition: background-color 3s , border-radius 3s, box-shadow 1500ms ;}
+    
+    .ipdown:hover{background-color: black;
+                  color:white;
+                  border-radius: 70%;
+                  box-shadow: 0px 1px 63px white;}
+    
+    .labhead{text-align: center;}
+    
+    .lab,.labhead{transition: color 1s, text-shadow 500ms;}
+    
+    .lab:hover{color: rgb(255, 0, 0);
+                text-shadow: 3px 1px 73px greenyellow}
+    
+    .labhead:hover{color: rgb(255, 0, 0);
+                    text-shadow: 3px 1px 73px greenyellow;}
+        
+    #plane-div{animation-name: pulse;
+                position: relative;
+                bottom: 200px;
+                animation: pulse 9s ease-in;
+                animation-iteration-count: infinite;}
+
+    #plane-div:hover{animation-play-state: paused;}
+        
+    #smallimg-div{position: relative;
+                  bottom: 672;
+                  left: 1780;
+                  width: fit-content;
+                  animation-name: plane;
+                  animation-iteration-count: infinite;
+                  animation-duration: 5s;
+                  transition: border-radius 3s ease-in, box-shadow 1s ;
+                  border-radius: 500px;}
+
+    #smallimg-div:hover{border-radius: 1000px;
+                        animation-play-state: running;}
+
+
+     @media screen and (max-width : 600px) {
+         
+        
+        
+    body {overflow-x: hidden;
+                             width: 100%;
+                                         margin: 0%;}
+                                                   
+
+     span{position: absolute;
+            top: 22%;
+            right: 50%;
+            display: flex;
+            flex-direction: row;}
+
+    .lab{text-align: center;}
+
+    #span1,#span2 {position: absolute;
+                         top: 90%;
+                         padding: 20px;}
+
+     #span1{right: 280px;}
+     #span2{right: 120px;
+            bottom: 30px;
+            }
+     #span3{right: 200px;
+            top: 85%;
+            }
+    #body-div{position: absolute;
+            right: 10%;}
+
+    .labto{position: relative;
+          top: 30;
+          right: 80%;
+          width: 200px;}
+    .inpto{position: relative;
+            left: 60px;}
+
+    .labdep{position: relative;
+            left: 80px;}
+    .inpdep{position: relative;
+            left: 19%;}
+    #smallimg-div {display: none;}
+    #plane-div{position: relative;
+                top: 350px;
+                width: 150px;
+                height: 100px;}
+    #head-div{font-size: 8;}
+    #body-div{text-align: left;}
+    #entire-page{box-sizing: border-box;}
+    
+
+   
+ }
+
+     @keyframes plane{
+        0%{
+            
+            background-color: black;
+            width: 0px;
+
+        }
+        100%{
+            
+            background-color: white;
+            width: 250px;
+
+        }
+    }
+        
+    @keyframes pulse{
+        0%{
+            transform: translate(0% , 0);
+            
+    
+    
+        }
+    
+        100%{
+            transform: translate(100vw , 0);
+          
+    
+            
+        }
+    }
+    
+    
+    </style>
+</head>
+
+
+
+<body>
+    <div id="entire-page">
+        <div id="head-div">
+            <h1>Altaf Travel Agency</h1>
+            <h5>Srinagar, J&K , India.</h5>
+            <span id="span1"><a href="#">International Flights</a></span>
+            <span id="span2"><a href="#">Helicopter Services</a></span>
+            <span id="span3"><a href="#">Cargo Services</a></span>
+     </div>
+     <div id="body-div">
+         <h3  class="labhead">Domestic Flights</h3>
+         <form>
+             <label  class="lab">From</label>
+             <input type="text" list="AirportList">
+             <datalist id="AirportList">
+                 <option value="Delhi Airport">
+                    <option value="Mumbai Airport">
+                        <option value="Bangalore Airport">
+                            <option value="Ahamadabad Airport">
+                               <option value="Altaf Airport">
+                                 <option value="Chennai Airport">
+             </datalist>
+             <label  class="labto">To</label>
+             <input class="inpto" type="text" list="AirportList2">
+             <datalist id="AirportList2">
+                <option value="Delhi Airport">
+                   <option value="Mumbai Airport">
+                       <option value="Bangalore Airport">
+                           <option value="Ahamadabad Airport">
+                              <option value="Altaf Airport">
+                                <option value="Chennai Airport">
+            </datalist>
+            <br>
+            <br>
+            <label class="labdep">Departure Date</label>
+            <input class="inpdep" style="text-align: center;" type="date">
+            <br>
+            <a href="#">
+            <input class="ipdown" style="position: relative;
+                            right: 200;
+                            top: 80;
+                            width: 250;
+                            height: 52;" type="button" value="Search For Flights">
+            </a>
+            </form>
+     </div>
+     <div id="animdiv">
+        <img id="plane-div" src="https://th.bing.com/th/id/R.66c1e664650d2a6ec855540c5f6b812e?rik=BYoWL8eVpaOCEQ&riu=http%3a%2f%2fwww.clipartbest.com%2fcliparts%2f9cz%2fxan%2f9czxanzoi.png&ehk=4I5Rc9PdqIb5RvxnfroUWc0LYnuNWJERTEkPQAmDmdo%3d&risl=&pid=ImgRaw&r=0" width="300px" height="150px">
+     </div>
+     
+        <img id="smallimg-div" src="https://thumbs.gfycat.com/ValidPossibleAndeancat-size_restricted.gif" width="300px" height="150px">
+    
+
+
+    </div>
+</body>
+</html
