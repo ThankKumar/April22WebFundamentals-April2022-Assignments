@@ -40,11 +40,11 @@
 
     footer{border: none;
             background-color: rgb(240, 240, 240);
-            width: 1500px;   
-            height: 50px;
-            padding-top: 35px;
-            padding-left: 20px;
-            overflow: hidden;}
+            width: 100%;
+            height: 60px;
+            position: absolute;
+            padding: 16px;
+            top:90%;}
 
     img{width: 100%;
         max-width: 300px;}
@@ -76,8 +76,14 @@
     <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
     </div>
     <div id="box">
-        <input id="imp" type="textarea" style="width: 500px; height: 25px; border-radius: 15px ; border: 2px solid rgb(59, 57, 57);">
-</div>
+        <input id="imp" list="this" style="width: 500px; height: 25px; border-radius: 15px ; border: 2px solid rgb(59, 57, 57);">
+        <datalist id="this" >
+            <option value="BING">
+                <option value="YAHOO">
+                    <option value="GMAIL">
+                </option>
+        </datalist>
+    </div>
 <br>
 <div id="butdiv">
 <button>Google Search</button>  
