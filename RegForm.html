@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two&family=Ubuntu+Mono:ital,wght@1,700&family=Yanone+Kaffeesatz&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d7f405947d.js" crossorigin="anonymous"></script>
+   <style>
+        html{font-family: 'Lobster Two', cursive;
+            color: black;}
+        body{background-color: rgb(193, 193, 255);}
+
+        .y:hover{color: rgb(3, 38, 178);
+            background-color: rgb(210, 255, 203);
+                }
+
+        button{width: 200px;
+                height: 50px;
+                border: none;
+                border-radius: 30%;
+                background-color: rgb(255, 255, 113);
+                text-align: center;
+                color: black;
+                font-family: 'Lobster Two', cursive;}
+        
+        #butdiv{text-align: center;
+             margin: auto;}
+ 
+        button:hover{color: rgb(55, 212, 27);}
+
+     
+
+        .y:disabled{cursor: not-allowed;}
+        /*Not allowed in disabled */
+      
+        #main{border: 2px solid black;
+            width: 300px;
+            padding: 30px;
+            text-align: left;
+            margin: auto;
+            background:linear-gradient(lightseagreen,rgb(240, 240, 129))}
+    </style>
+</head>
+<body>
+    <h1 style="border: 2px green solid;  width: 320px; text-align: center;padding: 20px; position: sticky; top: 0%; margin: auto; background-color: bisque; color: rgb(62, 100, 6);">Registraion Form</h1>
+    <div id="main">
+    <form>
+        <label>Full Name</label>
+        <input class="y"  type="text" placeholder="Enter Full Name" ></input>
+       <br>
+       <br>
+        <label>Email ID</label>
+        <input class="y" value="fixed@email.com" disabled>
+        <!--cursoer disabled-->
+       <br>
+       <br>
+        <label>Male</label>
+        <input class="y"  type="radio">
+        <label>Female</label>
+        <input class="y"  type="radio">
+        <label>Other</label>
+        <input class="y"  type="radio">
+        <br>
+        <br>
+        <label>D.O.B</label>
+        <input type="date">
+        <br>
+        <br>
+        <label>Password</label>
+        <input class="y"  type="password" maxlength="10" placeholder="Enter Password">
+        <br>
+        <br>
+        <label>Confirm Password</label>
+        <input class="y"  type="password" maxlength="10" placeholder="Enter Password">
+      <br>
+      <br>
+        <input type="checkbox">
+        <label>I accept the terms and conditions.</label>
+        
+    </form>
+</div>
+<br>
+<div id="butdiv">
+    <button <i class="fa-brands fa-html5"></i>  Register</button>
+</div>
+    
+</body>
+</html>
