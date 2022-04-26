@@ -1,0 +1,138 @@
+    <html>
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Dancing+Script:wght@700&family=Lobster+Two&family=Maven+Pro&family=Open+Sans:wght@300&family=Plus+Jakarta+Sans:wght@200&family=Secular+One&family=Signika+Negative:wght@300&family=Ubuntu+Mono:ital,wght@1,700&family=Yanone+Kaffeesatz&display=swap" rel="stylesheet">
+        <style>
+            html{font-family: 'Plus Jakarta Sans', sans-serif;}
+
+
+            body{margin: 0%;
+                overflow-x: hidden;}
+
+            #head-div{width: 100%;
+                     height: 15%;
+                     background:linear-gradient(45deg,rgb(0, 0, 0),rgb(39, 39, 127));
+                     margin: 0%;
+                     color: white;
+                     font-size: 20;
+                     padding-left: 20px;
+                     padding-top: 10;}
+
+            ul li a{text-decoration: none; 
+                    padding: 12px;
+                    left: 500;
+                    color: rgb(78, 159, 221);}
+
+            a{transition: background-color 3s ease-out,
+                          color 500ms ease-in,
+                          border-radius 3s ease-in;}
+            
+            
+            label{position: relative;
+                 left: 70;
+                 top: 50;
+                 text-decoration-color: black;
+                 font-size: 20;
+                 color: rgb(0, 0, 62);
+                 transition: color 1s;
+                line-height: 2;
+                letter-spacing: 3;}
+
+            label:hover{color: rgb(54, 61, 255);}
+            
+
+            ul li {float: left;
+                list-style: none;
+                position: relative;
+                left: 70%;
+                bottom: 20px;}
+
+            header{position: relative;
+                top: 25px;
+                left: 14px;
+                font-size: 24;
+                transition: color 1s ease-out, font-size 3s;
+                width: fit-content;
+            
+                animation-name: headtxt;
+                animation-iteration-count: infinite;
+                animation-duration: 5s;
+                animation-fill-mode: forwards;}
+
+            @keyframes headtxt{
+                0%{
+                    font-size: 24;
+                    color: white;
+                 }
+                100%{
+                    font-size: 40;
+                    color: rgb(78, 159, 221);
+                }
+            }
+
+            header:hover{animation-play-state: paused;}
+
+            a:hover{background-color: white;
+                    color: black;
+                    border-radius: 70px;}
+
+            #main{
+                 height: fit-content;
+                 width: 100%;
+                 display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+                padding: 20px;}
+
+            .ins{padding: 50px;
+                width: 30%;
+                 }
+
+            img{border-radius: 20px;
+                box-shadow: 0px 1px 55px black;
+                 animation-name: items;
+                animation-duration: 9s;
+                animation-iteration-count:3;
+                animation-fill-mode: forwards;}
+
+            img:hover{animation-play-state: paused;}
+
+            @keyframes items{
+                0%{
+                    transform: rotateZ(0deg);
+                    border-radius: 20px;
+                }
+              
+                100%{
+                    transform: rotateZ(360deg);
+                    border-radius: 70%;
+                }
+            }
+
+        </style>
+ 
+    </head>
+    <body>
+        <nav>
+            <div id="head-div">
+            <header>Geekster Food Court</header>
+            <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Offers</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+            </div>
+            <div id="main"> 
+                <div class="ins"><img src="https://th.bing.com/th/id/R.42371f428400947fdfb68cb9d4860494?rik=1WZ8rN7hUSOWoQ&riu=http%3a%2f%2fwww.ibeacon.com%2fwp-content%2fuploads%2f2014%2f07%2fdominos.jpg&ehk=Y5VqGOA5rELFziUPV64nQMmb9Kew%2fXFXGY4Fvsg0y%2bI%3d&risl=&pid=ImgRaw&r=0" height="300" width="400px"><a><label>PIZZA</label></div>
+                <div class="ins"><img src="https://patch.com/img/cdn20/shutterstock/22896833/20190821/090539/styles/patch_image/public/shutterstock-burger2___21090348903.jpg?width=610" height="300" width="400px"><label>BURGER</label></div>
+                <div class="ins"><img src="https://www.willcookforfriends.com/wp-content/uploads/2017/01/Decadent-Chocolate-Milkshake-Youd-Never-Know-Is-Healthy-hi-res-web-1B.jpg" height="300" width="400px"><label>SHAKES</label></div>
+                <div class="ins"><img src="https://th.bing.com/th/id/OIP.k4JMO5bD97BK3hxEHefrmAHaFP?pid=ImgDet&rs=1" height="300" width="400px"><label>SANDWHICH</label></div>
+                <div class="ins"><img src="https://th.bing.com/th/id/OIP.nsRO0D1s6jDn0xxeXgaKMgHaE8?pid=ImgDet&rs=1" height="300" width="400px"><label>NOODLES</label></div>
+                <div class="ins"><img src="https://im.whatshot.in/img/2020/Apr/shutterstock-1133804639-cropped-1557741221-2-momos-1586947864.jpg" height="300" width="400px"><label>MOMOS</label></div>
+            </div>
+
+
+        
+    </body>
+    </html>
