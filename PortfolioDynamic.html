@@ -1,0 +1,250 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTFOLIO</title>
+    <link rel="stylesheet" href="./sheet.css">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Dancing+Script:wght@700&family=Lobster+Two&family=Maven+Pro&family=Open+Sans:wght@300&family=Play&family=Plus+Jakarta+Sans:wght@200&family=Secular+One&family=Signika+Negative:wght@300&family=Ubuntu+Mono:ital,wght@1,700&family=Yanone+Kaffeesatz&display=swap" rel="stylesheet">
+    <style>
+        body{margin: 0%;
+    overflow-x: hidden;
+    background:linear-gradient(66deg , white , rgba(194, 194, 194, 0.185));}
+
+html{font-size: 23;
+    font-family: 'Play', sans-serif;}
+
+#head-div{background-color: black;
+         color: white;
+         width: 100%;
+         height: 90px;}
+
+header{position: relative;
+        top: 35px;
+        left: 23px;}
+
+button{background-color: black;
+        border: none;
+        color: white;
+        padding: 15px;
+    
+        transition: background-color 500ms ease-in, color 300ms ease-in, border-radius 700ms;}
+
+button:hover{background-color: white;
+             color: rgba(0, 0, 255, 0.733);
+             border-radius: 50%;
+            }
+
+ul li a{text-decoration: none;}
+
+ul li {float: left;
+       padding: 20px;
+        list-style: none;
+        position: relative;
+        left: 70%;
+        bottom: 40px;}
+
+/*----------Body Div Styling-------*/
+
+main-div{width: 100%;}
+
+#img-div {width: fit-content;
+         float: left;
+         position: absolute;
+         right: 60%;
+         top: 130px;
+         
+
+}
+
+#text-div{width: 48%;
+        float: right;
+        position: absolute;
+        left: 680px;
+        top: 150px;
+        font-size: 29;
+        text-shadow: 2px 5px 73px #63ffbbd3;
+        color: rgba(0, 0, 0, 0.958);
+        text-align: center;
+    
+        transition: color 1200ms , text-shadow 500ms;}
+
+#text-div:hover{text-shadow: 1px 3px 11px black;
+                color: white(0, 0, 124);}
+
+@keyframes picture{
+    0%{
+            transform: rotateZ(0deg);
+    }
+    100%{
+            transform: rotateZ(360deg);
+    }
+}
+
+img{border-radius: 75px;
+    transition: border-radius 1200ms;
+   
+     animation-name:picture;
+     animation-iteration-count: 1;
+     animation-duration: 2500ms;}
+
+img:hover{border-radius: 275px;}
+
+/*-------below body-------*/
+
+#below-body{display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            position: relative;
+            top: 70%;
+            right: 200px;
+            bottom: 20px;}
+
+.head-bot{text-decoration: none;
+    margin-top: 35px;
+    color: black;
+    margin-left: 90px;
+    font-size: 18;
+    width: fit-content;
+    
+    transition: color 1s, background-color 500ms ;}
+
+.head-bot:hover{background-color: white;
+          color: blue;
+            width: fit-content;}
+
+
+.bodyitems a {text-decoration: none;}
+
+/*--------about me-----*/
+
+#about-me{width: 80%;
+         margin-top: 550px;
+         margin-right: 120px;
+         text-align: left;
+         margin-left: 150px;
+         justify-content: center;
+         line-height: 2;
+         letter-spacing: -1px;
+         word-spacing: 2px;
+         transition: color 2300ms , text-decoration 300ms;
+         }
+
+#about-me:hover{color: blue;
+                text-decoration: 2px 3px 31px blueviolet;}
+
+#about-me h1 {text-align: center;}
+
+#about-me p {text-align: justify;}
+
+/*----footer---*/
+
+footer{width: 100%;
+        height: 50px;
+        position: relative;
+        top: 100px;
+        padding: 20px 32px;
+        background-color: black;
+        color: white;
+        
+    
+        transition: color 2s;}
+
+footer:hover{color: rgba(0, 0, 255, 0.814);}
+
+
+
+/*--------one----------*/
+
+#one{position: relative;
+    bottom: 150%;
+    left: 22px;
+    
+    animation-name: coder;
+    animation-duration: 60s;
+    animation-iteration-count: infinite;}
+
+#one:hover{animation-play-state: paused;}
+
+
+@keyframes coder{
+    0%{
+        transform: translate(0,0);
+    }
+    10%{
+        transform: translate(300%,400%);
+    }
+    20%{
+        transform: translate(700%,400%);
+    }
+    30%{
+        transform: translate(500%,200%);
+    }
+    40%{
+        transform: translate(320%,-400%);
+    }
+    50%{
+        transform: translate(300%,900%);
+    }
+    60%{
+        transform: translate(200%,-400%);
+    }
+    70%{
+        transform: translate(1000%,700%);
+    }
+    80%{
+        transform: translate(700%,-400%);
+    }
+    90%{
+        transform: translate(300%,50%);
+    }
+
+    100%{
+        transform: translate(1400%,-400%);
+    }
+}
+    </style>
+
+
+
+
+</head>
+<body>
+    <div id="head-div">
+        <nav>
+            <header>Mohammad Altaf Bazaz</header>
+            <ul>
+                <li><a href="#"><button>Facebook</button></a></li>
+                <li><a href="#"><button>Instagram</button></a></li>
+                <li><a href="#"><button>Phone</button></a></li>
+            </ul>
+        </nav>
+    </div>
+
+        <div id="img-div">
+            <img src="https://scontent-del1-2.xx.fbcdn.net/v/t39.30808-6/278001022_110952478244127_6084009492173514196_n.jpg?_nc_cat=104&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=riGyw_bj0wwAX9F3mXd&_nc_oc=AQk7BUp7MQIXiiLE-8ny5LY7Lono6Mjnl_2S7WmtL1Jue1rhsPLPCrRGNmntYSOAALU&_nc_ht=scontent-del1-2.xx&oh=00_AT9hEzKlhkrJ765nHcSotDnGE_cx-yXQoL7jVdr0b4aNVg&oe=626F22B8" height="300" width="400">
+        </div>
+        <div id="text-div">
+            <h3>Software Developer</h3>
+            <h5>M.Tech in Electronics & Communication Engineering (2022)</h5>
+            <h5>B.Tech in Electronics & Communication Engineering (2020)</h5>
+        </div>
+    </div>
+    <div id="below-body">
+        <div class="bodyitems"><a href="https://drive.google.com/file/d/1BpZITlZZcf0aYCgLzQN-VKV_3fXlpdwe/view?usp=sharing"><img src="https://images.worthwhile.com/uploads/zinnia/2017/06/05/istock-542822578.jpg.1155x0_q85.jpg" height="300px" width="320px"> <h2 class="head-bot">PROJECTS</h2> </a> </div>
+        <div class="bodyitems"><a href="https://drive.google.com/drive/folders/1jucITa7jnlJ27iEWEKdZBv5ObKxl1Py7?usp=sharing"><img src="https://www.changeboard.com/images/7429/default/work-experience.jpg" height="300px" width="320px">   <h2 class="head-bot">EXPERIENCE</h2> </a>   </div>
+        <div class="bodyitems"><a href="https://drive.google.com/drive/folders/1jucITa7jnlJ27iEWEKdZBv5ObKxl1Py7?usp=sharing" target="_blank"><img src="https://th.bing.com/th/id/R.2567c3d1a6d0e09d63c24371a37ca5ac?rik=5EY0ZtA86i%2fBAA&riu=http%3a%2f%2fwww.engineering.com%2fportals%2f0%2fBlogFiles%2fsoldering.jpg&ehk=eS0PcEjth9HvV5IqkplKcezevUBSvZNs24S8fwL1%2boI%3d&risl=&pid=ImgRaw&r=0&sres=1&sresct=1"  height="300px" width="320px">  <h2 class="head-bot">RESEARCH</h2> </a> </div>
+    </div>
+
+    <div id="about-me">
+            <h1>ABOUT ME</h1>
+        <p>I belong to Srinagar, J&K. I completed my schooling from J&K State Board Of School Education having scored 80% in Class-X & 82% in Class-XII. After having finished my high school i went to the University of Kashmir to persue my B.Tech in Electronics & Communication Engineering. After Having completed my B.Tech in Electronics & Communication Enginering i also persued my M.Tech in Electronics & Communication Engineering from Desh Bhagat University, Punjab , India in 2022. I have written 3 research articles,links of which are mentioned above in the research experience section. Currently i am undergoing traning to become a Full Stack Web Developer at Geekster. </p>
+    </div>
+    <footer>
+        All Rights Reserved &copy;
+    </footer>
+
+    <img id="one" src="https://analyticsindiamag.com/wp-content/uploads/2018/12/programming.gif" width="120px" height="100px">
+</body>
+</html>
