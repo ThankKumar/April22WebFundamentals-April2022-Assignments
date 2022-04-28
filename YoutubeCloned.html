@@ -1,0 +1,261 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YouTubeCloned!</title>
+    <script
+      src="https://kit.fontawesome.com/d7f405947d.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+        body {
+          margin: 0%;
+          background-color:5);
+          overflow-x  : hidden;
+        }
+
+        #main {
+          width: 100%;
+          height: 90%;
+        }
+
+        #aside {
+          height: 100%;
+          width: 15%;
+          float: left;
+
+          margin-top: 14%;
+          position: relative;
+          bottom: 220;
+          padding: 5px;
+          box-sizing: border-box;
+        }
+
+        #toright {
+          height: 100%;
+          width: 84%;
+          float: right;
+
+          margin-top: 14%;
+          display: flex;
+          flex-direction: row;
+          padding: 20px;
+          box-sizing: border-box;
+          flex-wrap: wrap;
+          justify-content: center;
+          position: relative;
+          bottom: 220;
+        }
+
+        #toright > .items {
+          width: 300px;
+          height: 270px;
+
+          margin-right: 5px;
+          margin-bottom: 45px;
+        }
+
+        #navdiv {
+          width: 100%;
+          height: 170px;
+
+          position: relative;
+          bottom: 14%;
+        }
+
+        #head-img{margin-top: 75px;
+                margin-left: 20px;}
+
+      input{position: relative;
+          left: 29%;
+          bottom: 70px;
+          width: 500;
+          height: 32;}
+
+      #floating-but{position: relative;
+                  bottom: 69;
+                  left: 436;
+
+                  background-color: rgba(208, 207, 207, 0.195);}
+
+      #floating-but2{position: relative;
+                  bottom: 70;
+                  left: 442;
+                  border-radius: 90%;
+                  border: none;
+                  background-color: rgb(208, 207, 207,0.5);}
+
+
+      #floating-but3{position: relative;
+                  bottom: 70;
+                  left: 47.9%;
+
+                  border: none;
+                  background-color: rgb(208, 207, 207,0.5);}
+
+      #floating-but4{position: relative;
+                  bottom: 70;
+                  left: 48.9%;
+
+                  border: none;
+                  background-color: rgb(208, 207, 207,0.5);}
+
+      #floating-but5{position: relative;
+                  bottom: 70;
+                  left: 49.9%;
+
+                  border: none;
+                  background-color: rgb(208, 207, 207,0.5);}
+
+
+
+        .common {margin-right:80px;
+              border: none;
+                position: relative;
+                right: 300px;
+                top: 10px;
+                width: 70;
+                padding: 5px;
+                height: 32;
+                border-radius: 42px;}
+
+        .common:hover{border: 1px black solid;}
+
+        #aside{display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;}
+
+        #aside .asidesec{width: 220;
+                          margin-bottom: 25;
+                          background-color: white;
+                          border: none;}
+
+        #aside .asidesec:hover{background-color: rgba(192, 192, 192, 0.353);
+                                border: 1px solid black;}
+
+
+                                #floating-but:hover{border: 1px solid black;}
+                                #floating-but2:hover{border: 1px solid black;}
+                                #floating-but3:hover{border: 1px solid black;}
+                                #floating-but4:hover{border: 1px solid black;}
+                                #floating-but5:hover{border: 1px solid black;}
+
+
+
+      button{width: 45px;
+          height: 31px;}
+    </style>
+  </head>
+  <body>
+    <div id="main">
+      <div id="navdiv">
+        <header>
+          <img
+            id="head-img"
+            src="https://logos-world.net/wp-content/uploads/2020/04/YouTube-Logo.png"
+            height="100px"
+            width="120px"
+          />
+        </header>
+        <input type="search" list="suggestions" />
+        <datalist id="suggestions">
+          <option value="1"></option>
+        </datalist>
+        <button id="floating-but">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+        <button id="floating-but2">
+          <i class="fa-solid fa-microphone"></i>
+        </button>
+
+        <button id="floating-but3"><i class="fa-solid fa-video"></i></button>
+
+        <button id="floating-but4">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <button id="floating-but5">
+          <i class="fa-regular fa-bell"></i>
+        </button>
+
+        <button class="common">ALL</button><button class="common">MUSIC</button
+        ><button class="common">MIXES</button
+        ><button class="common">JAVA</button
+        ><button class="common">HIDNI</button
+        ><button class="common">UPSC</button><button class="common">PYQ</button>
+        <hr />
+      </div>
+      <div id="aside">
+        <button class="asidesec">HOME</button
+        ><button class="asidesec">EXPLORE</button
+        ><button class="asidesec">SHORTS</button
+        ><button class="asidesec">SUBSCRIPTIONS</button>
+        <hr />
+        <button class="asidesec">LIBRARY</button
+        ><button class="asidesec">HISRTORY</button
+        ><button class="asidesec">YOUR VIDEOS</button
+        ><button class="asidesec">WATCH LATER</button
+        ><button class="asidesec">SHOWMORE</button
+        ><button class="asidesec"></button>
+      </div>
+      <div id="toright">
+        <div class="items">
+          <img
+            src="https://lh5.googleusercontent.com/proxy/QjcbZk42IYrCk2GcDMt8pDTcHLPtgL-jMZn-pAPdJoWYFY1finVXF-Hv3G5Vq5IaTJ52X-RCqOKi-XgNNcM5QBQRfUFvVb9Gde3geTwa80DWubY9xWYVE5lk9VSiqsuS7lw8kBNKFN_3Uw=w1152-h603-s-nd"
+            height="269px"
+            width="300"
+          />
+        </div>
+        <div class="items">
+          <img
+            src="https://i.ytimg.com/vi/zJFlK0aOnqU/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCMkkZK_GoJWMekYUKheMPdNIQAFA"
+            height="269px"
+            width="300"
+          />
+        </div>
+        <div class="items">
+          <img
+            src="https://i.ytimg.com/vi/j-br1a3uBVo/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAIdp9NSukW1Ihpnnj3Zbx2o0wdPA"
+            height="269px"
+            width="300"
+          />
+        </div>
+        <div class="items">
+          <img
+            src="https://i.ytimg.com/vi/OpQ3a3FlcOw/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCBKihkhR67Iqdwx7VIm_45tNpU6A"
+            height="269px"
+            width="300"
+          />
+        </div>
+        <div class="items">
+          <img
+            src="https://i.ytimg.com/vi/j10MpAYwlPE/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBaOg2yeRWJ6D8cLeCygVjzNbDvkw"
+            height="269px"
+            width="300"
+          />
+        </div>
+        <div class="items">
+          <img
+            src="https://i.ytimg.com/vi/LusTv0RlnSU/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBU5G2QvrEraQPOe26Ax4YsCv3DaQ"
+            height="269px"
+            width="300"
+          />
+        </div>
+        <div class="items">
+          <img
+            src="https://i.ytimg.com/vi/pvITWIJccVQ/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLD7tqMt3RgBH20YaToUcLol8cx_ng"
+            height="269px"
+            width="300"
+          />
+        </div>
+        <div class="items">
+          <img
+            src="https://i.ytimg.com/vi/NwdQx2P_ytk/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDVaIC66fcfhmckrx_0bkaPMSH9Cg"
+            height="269px"
+            width="300"
+          />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
