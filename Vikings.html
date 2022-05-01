@@ -1,0 +1,232 @@
+<html lang="en">
+<head>
+    
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Dancing+Script:wght@700&family=Lobster+Two&family=Maven+Pro&family=Open+Sans:wght@300&family=Orbitron:wght@500&family=Play&family=Plus+Jakarta+Sans:wght@200&family=Secular+One&family=Signika+Negative:wght@300&family=Ubuntu+Mono:ital,wght@1,700&family=Yanone+Kaffeesatz&display=swap" rel="stylesheet">
+    <title>Viking Workshop</title>
+    <link rel="stylesheet" href="/Vikings.css">
+    <style>
+        body{background-color: black;
+    margin: 0%;
+    background: url("https://th.bing.com/th/id/R.36a2f72bb34787b50c5cc7c06a10f0b2?rik=IQ8wwLBSMpi9lg&riu=http%3a%2f%2fwww.pixelstalk.net%2fwp-content%2fuploads%2f2016%2f07%2fViking-Desktop-Wallpapers.jpg&ehk=36iwBY6VQJ5cYPC36vaOIsX9ayo6j6VDSk5s5EoX9xU%3d&risl=&pid=ImgRaw&r=0");
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
+    background-position-y: 100px;}
+
+html{color: white;
+    font-size: 18.2;
+    font-weight: 55;
+    font-family: 'Orbitron', sans-serif;}
+
+
+
+
+
+
+#headDiv{
+        margin: 0%;
+        width: 100%;    
+        height: 122px;
+        background-color: black;}
+
+header {padding: 16px 50px;}
+
+ul li {float: left;
+       padding: 20px;
+       position: relative;
+        left: 40%;
+        bottom: 115px;
+        list-style: none;
+        }
+
+ul li a{text-decoration: none;
+        padding: 10px;
+        color: white;
+        transition: color 2s, background-color 2s ease-out , border-radius 500ms ease-in;}
+
+ul li a:hover{background-color: white;
+             color: red;
+             border-radius: 16px 40px 16px 40px;}
+
+
+aside img{position: relative;
+            left: 55%;
+            bottom: -80px;
+            opacity: 0.69;
+            border-radius: 120px 32px 120px 23px;
+            animation-name: ragnar;
+            animation-duration: 7s;
+            animation-iteration-count: infinite;
+            animation-fill-mode: forwards;}
+
+@keyframes ragnar{
+    0%{
+            opacity: 0.1;
+            box-shadow: 1px 1px 1px black;
+           
+
+    }      
+    100%{
+            opacity: 1;
+            box-shadow: 5px 13px 99px black;
+            
+    }
+}
+
+    form{position: relative;
+        bottom: 66%;
+        left:70px;
+        box-shadow: 3px 7px 99px black;
+        width: 650;
+        height: 550;
+        border-radius: 32px 132px 32px 132px;
+        background-image: url("https://wallup.net/wp-content/uploads/2019/09/07/578952-vikings-action-drama-history-fantasy-adventure-series-1vikings-viking-warrior-blood.jpg");
+        background-size: cover;
+        animation-name: ragnareye;
+        animation-duration: 9s;
+        animation-iteration-count: infinite;}
+
+    @keyframes ragnareye{
+        0%{
+             opacity: 0.2;
+        }
+        100%{
+             opacity: 1;
+        }
+    }
+
+
+    form input{width: 200;
+                height: 32;
+                border-radius: 40px 16px 40px 16px;
+                box-shadow: 5px 7px 9px black;}
+
+    form  > .inputNormal{width: auto;
+                        border-radius: 0px;
+                        box-shadow: none;}
+
+    label{font-size: 23;}
+
+    button{width: 200;
+            height: 50;
+            margin-left: 40%;
+            font-size: 18;
+            border: none;
+            border-radius: 40px 16px 40px 16px;
+            color: rgb(255, 255, 255);
+            border: 1px solid white;
+            background-color: transparent;}
+            /*transparent property*/
+    
+    button:hover{opacity: 1;}
+
+    footer{text-align: center;
+        width: 100%;
+        height: 372px;
+        animation-name: footeranim;
+        animation-duration: 13s;
+        animation-iteration-count: infinite;}
+
+    @keyframes footeranim{
+        0%{
+            background-color: rgba(0, 0, 0, 0.052);
+        }
+        100%{
+            background-color: rgba(0, 0, 0,0.786);
+        }
+    }
+
+    footer ul li {position: relative;
+                    top: 100px;
+                transform: translateX(-160%);}
+
+
+
+
+
+
+
+@media screen and (max-width: 600px){
+
+    #headDiv{display: block;}
+
+    nav > ul > li > a{visibility: hidden;}
+
+    form{width: 500px;
+         height: 600px;
+        position: relative;
+        bottom: 100%;
+        margin-right: 200px;
+        background-size: cover;}
+
+    #aside > aside > img {visibility: hidden;}
+
+    footer ul li{visibility: hidden;}
+}
+
+    </style>
+</head>
+<body>
+    <div id="headDiv">
+        <nav>
+            <header><img src="https://d.wattpad.com/story_parts/929959263/images/1627285acc0ef764706499528552.jpg" height="100px" width="250px"></header>
+            <ul>
+                <li><a href="#">WHY JOIN?</a></li>
+                <li><a href="#">TRAINERS AVAILABLE</a></li>
+                <li><a href="#">VIKINGS DIET PLANS</a></li>
+                <li><a href="#">CONTACT US</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="aside">
+        <aside><img src="https://wallpapercave.com/wp/wp7922051.jpg" height="550px" width="650px"></aside>
+    </div>
+    <form>
+        <label style="position: relative;
+                    left: 15px;
+                    bottom: -2px;">Become A Viking</label>
+        <br>
+        <br>
+        <label>First Name</label>
+        <input type="text">
+        <br>
+        <br>
+        <label>Middle Name</label>
+        <input type="text">
+        <br>
+        <br>
+        <label>Last Name</label>
+        <input type="text">
+        <br>
+        <br>
+        <label>When were you born Viking?</label>
+        <input type="date">
+        <br>
+        <br>
+        <label>Male</label>
+        <input class="inputNormal" type="radio">
+        <label>Female</label>
+        <input class="inputNormal" type="radio">
+        <br>
+        <br>
+        <input class="inputNormal" type="checkbox">
+        <label>I AM ENTERING AT MY OWN RESPONSIBILITY.</label>
+        <br>
+        <input class="inputNormal" type="checkbox">
+        <label>I UNDERSTAND THAT ALL SERVICES ARE PAID</label>
+        <br>
+        <br>
+        <button>I'm Ready to be a Viking.</button>
+  
+    </form>
+    <footer><ul>
+        <li>I am Scared, I don't want to join.</li>
+        <li>What is this about?</li>
+        <li style="margin-left: 300px;">Am i being watched?</li>
+    </ul></footer>
+</body>
+</html>
