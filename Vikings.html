@@ -151,6 +151,7 @@ aside img{position: relative;
 
 
 @media screen and (max-width: 600px){
+    body {overflow-x: hidden;}
 
     #headDiv{display: block;}
 
@@ -158,9 +159,9 @@ aside img{position: relative;
 
     form{width: 500px;
          height: 600px;
-        position: relative;
-        bottom: 100%;
-        margin-right: 200px;
+        position: absolute;
+        top: 20%;
+        transform: translateX(-15%);
         background-size: cover;}
 
     #aside > aside > img {visibility: hidden;}
