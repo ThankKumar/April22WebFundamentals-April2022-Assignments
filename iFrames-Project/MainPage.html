@@ -1,1 +1,73 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Geekster Online Store</title>
 
+    <style>
+      body {
+        background-color: rgba(0, 0, 0, 1);
+      }
+
+      #main-div {
+        display: flex;
+      }
+
+      html {
+        font-size: 32;
+      }
+
+      #item-div {
+        height: 100%;
+        width: 25%;
+        margin-top: 15px;
+      }
+
+      #item-div a {
+        position: relative;
+        left: 5;
+        top: 300;
+        width: 100%;
+        height: 100px;
+        color: white;
+        text-decoration: none;
+        padding: 10px;
+      }
+
+      #item-div a:hover {
+        background-color: white;
+        color: blue;
+      }
+
+      #iframe-div iframe {
+        width: 100vw;
+        height: 100vh;
+      }
+
+      #iframe-div {
+        position: relative;
+        left: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="main-div">
+      <div id="item-div">
+        <a href="./Laptops.html" target="Right">Laptops</a>
+        <br />
+        <br />
+        <a href="./Mobile.html" target="Right">Mobile</a>
+        <br />
+        <br />
+        <a href="./Men's Clothing.html" target="Right">Men's Fashion</a>
+        <br />
+        <br />
+        <a href="./TV.html" target="Right">TV</a>
+      </div>
+      <div id="iframe-div">
+        <iframe name="Right"></iframe>
+      </div>
+    </div>
+  </body>
+</html>
