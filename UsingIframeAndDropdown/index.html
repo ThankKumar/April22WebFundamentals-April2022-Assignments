@@ -1,0 +1,234 @@
+<html lang="en">
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Dancing+Script:wght@700&family=Lobster+Two&family=Maven+Pro&family=Open+Sans:wght@300&family=Orbitron:wght@500&family=Patrick+Hand&family=Play&family=Plus+Jakarta+Sans:wght@200&family=Secular+One&family=Signika+Negative:wght@300&family=Ubuntu+Mono:ital,wght@1,700&family=Yanone+Kaffeesatz&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/d7f405947d.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      body {
+        margin: 0%;
+        background: linear-gradient(35deg, white, rgba(0, 0, 0, 0.723), grey);
+        overflow-x: hidden;
+      }
+
+      html {
+        font-family: "Patrick Hand", cursive;
+      }
+
+      header {
+        color: white;
+        background-color: black;
+        padding: 16px 32px;
+        text-shadow: 1px 3px 7px;
+        font-size: 52;
+        animation-name: headname;
+        animation-duration: 3500ms;
+        animation-iteration-count: infinite;
+      }
+      footer{background-color: black;
+            width: 100%;
+            height: 72px;
+            position: relative;
+            top: 60px;}
+
+      @keyframes headname {
+        0% {
+          color: white;
+        }
+        25% {
+          color: yellow;
+        }
+        50% {
+          color: limegreen;
+        }
+        75% {
+          color: blue;
+        }
+        100% {
+          color: pink;
+        }
+      }
+
+      #nav-items {
+        margin-left: 80%;
+        position: relative;
+        bottom: 70;
+      }
+
+
+
+      #nav-items .atag {
+        color: white;
+        text-decoration: none;
+        padding: 6px 9px;
+        font-size: 18;
+        font-family: "Times New Roman", Times, serif;
+        transition: background-color 300ms ease-in, color 200ms ease-out;
+      }
+
+      #nav-items .atag:hover {
+        background-color: white;
+        color: blue;
+        
+      }
+
+      button {
+        position: relative;
+        bottom: 1px;
+        height: 25px;
+        border-radius: 40px;
+        background-color: white;
+      }
+
+      section {
+        font-size: 44;
+        text-align: center;
+        position: relative;
+        left: 31%;
+        bottom: 46px;
+        background-color: black;
+        color: white;
+        font-family: "Times New Roman", Times, serif;
+        padding: 12px;
+        width: 700;
+      }
+      ul li {
+        color: white;
+        font-size: 23;
+        font-weight: 1000;
+        font-family: "Times New Roman", Times, serif;
+        list-style: none;
+        position: relative;
+        left: 91;
+      }
+
+      h1{position: relative;
+        left:120px;
+        font-family: 'Times New Roman', Times, serif;
+        animation-name: head;
+        animation-duration: 9s;
+        animation-iteration-count: infinite;
+        }
+
+    @keyframes head{
+        0% {
+          color: black;
+        }
+      
+        50% {
+          color: white;
+        }
+       
+
+    }
+
+
+    #iframediv{width: 300px;
+            height: 330px;
+            position: absolute;
+            display: none;}
+
+    #nav-items:hover
+        #iframediv{display: block;}
+        /* VERY IMPORTANT CONCEPT */
+    iframe{display: block;
+        height: 300px;
+        width: 300px;}
+
+
+
+      #jobs {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-around;
+        position: relative;
+        bottom: 25px;
+        flex-wrap: wrap;
+        box-shadow: 2px 5px 33px black;
+        width: 50%;
+        position: relative;
+        left: 450px;
+        top: 10px;
+        background-color: rgba(0, 0, 0, 0.592);
+                   
+
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <header>CareerNation</header>
+      <div id="nav-items">
+        <a id="one" class="atag" href="#">Join Us</a>
+        <a class="atag" href="#">Contact Us</a>
+        <a href="#"
+          ><button><i class="fa-solid fa-magnifying-glass"></i></button
+        ></a>
+        <div id="iframediv">
+            <iframe src="./form.html" frameborder="0"></iframe>
+        </div>
+      </div>
+    </nav>
+    <section>
+      <p>Top 5 High Paying Jobs in India.</p>
+    </section>
+
+    <div id="jobs">
+      <div class="joblist">
+        <h1>Data Scientist</h1>
+        <img src="https://procurementpeoplecloud.co.uk/wp-content/uploads/2018/04/PCD-02-04-18.jpg" width="500px" height="300px" />
+        <ul>
+          <li>PayRange : [8-100] lpa</li>
+          
+        </ul>
+      </div>
+      <div >
+        <h1>Software Engineers</h1>
+        <img src="https://th.bing.com/th/id/OIP.TCSkGnIfl1fIQieMpI1RVAHaE7?pid=ImgDet&rs=1" width="500px" height="300px" />
+        <ul>
+          <li>PayRange : [6-100] lpa</li>
+        </ul>
+      </div>
+      <div class="joblist">
+        <h1>Commercial Pilots</h1>
+        <img src="https://th.bing.com/th/id/R.d8e744469c1c9079809572914ae47b70?rik=GPjSB4IFCcu24w&riu=http%3a%2f%2fwww.pilotcareernews.com%2fwp-content%2fuploads%2f2016%2f02%2fFTE-Pilots-at-Sim.jpg&ehk=l2tozoCxYT3nmFlt9e4OUw2k72CDakGcIAx2RnfDmng%3d&risl=&pid=ImgRaw&r=0" width="500px" height="300px" />
+        <ul>
+          <li>PayRange : [ 12-60 ] lpa</li>
+
+          
+        </ul>
+      </div>
+      <div class="joblist">
+        <h1>Investment Bankers</h1>
+        <img src="https://th.bing.com/th/id/OIP.K-t-RS1hvgUs48lIZj9zPwHaF4?pid=ImgDet&rs=1" width="500px" height="300px" />
+        <ul>
+          <li>PayRange : [ 8-40 ] lpa</li>
+
+        </ul>
+      </div>
+      <div class="joblist">
+        <h1>Medical Professtionals</h1>
+        <img src="https://cdn9.dissolve.com/p/D430_49_353/D430_49_353_1200.jpg" width="500px" height="300px" />
+        <ul>
+          <li>PayRange : [ 6-24 ] lpa</li>
+
+          <li>Job Description</li>
+        </ul>
+      </div>
+     
+        </ul>
+      </div>
+    </div>
+   
+    <footer>
+        <h1>All rights reserved &copy;</h1>
+    </footer>
+
+  </body>
+</html>
