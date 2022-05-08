@@ -1,0 +1,364 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mohammad Altaf</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Coda&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/d7f405947d.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <style>
+    body {
+      margin: 0%;
+      overflow-x: hidden;
+      background: linear-gradient(50deg, rgba(26, 255, 72, 0.83) ,rgba(255, 143, 24, 0.452) , rgba(27, 255, 118, 0.781) );
+    }
+
+    html {
+      font-family: "Coda", cursive;
+      font-size: 23;
+      font-weight: 500;
+    }
+
+    button {
+      font-size: 23;
+      padding: 26px;
+      color: white;
+      background-color: black;
+
+      transition: background-color 500ms, box-shadow 200ms, color 300ms,
+        border-radius 700ms;
+    }
+
+    button:hover {
+      background-color: white;
+      color: blue;
+      border-radius: 45%;
+      box-shadow: 0px 1px 13px white;
+    }
+
+    ul li {
+      list-style: none;
+      margin-left: 12px;
+      float: left;
+      position: relative;
+      right: 39px;
+    }
+
+    header {
+      font-size: 53;
+      position: relative;
+      left: 20px;
+      top: 29px;
+    }
+
+    nav {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      color: white;
+      background-color: black;
+    }
+
+    i {
+      position: relative;
+      right: 7px;
+    }
+
+    /* body */
+/* 
+    #maindiv{background-image: url("https://th.bing.com/th/id/R.b9c4fcf2c1ac575ea6b9921d54223f33?rik=spH0eg6czVZlPA&riu=http%3a%2f%2fcdn.wallpapersafari.com%2f71%2f53%2f612Fb3.jpg&ehk=sI6mDZkdluD5VRV%2fgIcC2pJNHPrDczMG%2bY2PZSpWuro%3d&risl=&pid=ImgRaw&r=0");
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position-y:42% ;
+            } */
+
+    section{display:flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-left:  750px;
+            margin-right:  750px;
+            margin-top: 100px;
+            width: fit-content;
+            }
+
+      p{font-size: 33;
+        text-align: center;
+        color: black;
+        margin-left: 20px;
+        text-shadow: 1.3px 1.5px 3px black;
+        }
+
+      p > span{font-size: 49;
+              color: blue;
+              color 300ms}
+
+      section > img{border-radius: 120px;}
+
+      article > li {list-style: none;
+                    padding: 50px;
+                    float: left;
+                    position: relative;
+                    left: 30%;
+                    transition: background-color 500ms, color 300ms , border-radius 300ms;}
+
+      article{text-align: center;
+              position: relative;
+              top: 20px;
+              /* background-color: rgba(142, 249, 255, 0.392); */
+              height: 230px;
+              margin: auto 190px;
+              border-radius: 100px;}
+
+      article > li:hover{background-color: blue;
+                      color: white;
+                      border-radius: 30px;} 
+
+
+      .education-class{transform: translateX(-45%);
+                      font-size: 30;}
+
+      .projects-class{transform: translateX(30%);}
+
+      a{text-decoration: none;
+        font-size: 30;
+        color: black;}
+
+      a:hover{color: white;}
+
+      .research-class{position: relative;
+                      left: 9%;}
+                
+      #aboutme{text-align: center;}
+
+      #aboutme > p {font-family: "Coda", cursive;
+      font-size: 43;
+      font-weight: 500;}
+
+
+      form{display: grid;
+      grid-template-columns: max-content;
+        grid-template: auto;
+        position: relative;
+      left: 45%;}
+
+      input{height: 40px;
+            width: 320px;
+            border-radius: 30px;}
+
+      label{font-size: 23;}
+
+      input:last-child{background-color: rgba(18, 1, 85, 0.218);
+                      padding: 20px;
+                      width: fit-content;
+                      text-align: center;
+                      margin-left: 100px;}
+
+      /* footer */
+
+      footer{background-color: black;
+              color: white;
+              height: 72px;
+              width: 100%;}
+
+                      
+     /* Mobile Responsive */
+
+     @media screen and (max-width:600px){
+
+        body{overflow-x: hidden;
+            width: 100%;}
+      
+
+       nav{display: flex;
+          flex-direction: column;
+          height: 120px;
+          text-align: center;}
+
+        header{font-size: 22px;
+          text-align: center;
+        }
+        
+
+        button{height: 10px;
+                width: 10px;
+                margin-left: 70px;
+                margin-top: 15px;
+                padding: 0%;
+              font-size: 13;}
+
+        section{display: flex;
+                flex-direction: column;
+              position: relative;
+              font-size: 14;
+              right: 870px;
+            width: 100%;}
+
+        section > p {font-size: 13;
+                    position: relative;
+                    left:100px;
+                  }
+
+        p > span{font-size: 19;}
+
+        img{width: 170px;
+            height: 200px;
+            position: relative;
+            bottom: 70px;
+            left: 120px;
+            }
+
+        article{font-size: 14;
+                padding: 0%;
+                text-align: center;
+                display: grid;
+                position: relative;
+                right: 180px;
+                width: 80%;
+                }
+              
+        article >  li {padding: 0%;
+                      display: flex;
+                      align-items: center;
+                      width: fit-content;}
+              
+                      .education-class{transform: translate(-30%,-15%);
+                        text-align: center;
+                        width: 100%;
+
+                      font-size: 14;}
+
+      .projects-class{transform: translate(-30%,-110%);
+                      text-align: center;
+                  }
+
+      a{text-decoration: none;
+        font-size: 14;
+        color: black;}
+
+      a:hover{color: white;}
+
+      .research-class{display: flex;
+              flex-direction: column;
+              margin-bottom: 20px;
+              position: relative;
+              bottom: 120px;}
+      
+      #research > h1{position: relative;
+                  bottom: 100px;}
+
+
+            form{display: none;}
+
+            footer{position: relative;
+                  top: 0;}
+
+      #aboutme{transform: translateY(-60%);}
+
+      
+      }
+        
+
+  
+  </style>
+  <body>
+    <nav>
+      <header>Mohammad Altaf</header>
+
+      <ul>
+        <li>
+          <a href="#"
+            ><button><i class="fa-brands fa-facebook"></i>Facebook</button></a
+          >
+        </li>
+        <li>
+          <a href="#"
+            ><button><i class="fa-brands fa-instagram"></i>Instagram</button></a
+          >
+        </li>
+        <li>
+          <a href="#"
+            ><button><i class="fa-brands fa-linkedin"></i>LinkedIn</button></a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <!-- body -->
+<div id="maindiv">
+
+    <section>
+      <img src="./image1.png" height="330px" width="360px" />
+      <p>
+        Hi , My name is <br /><span>Mohammad Altaf</span><br />
+        and i am a
+        <span
+          ><br />
+          Software Developer</span
+        >
+      </p>
+    </section>
+    <div id="bodysection">
+      <!-- <img  src="https://wallpaperaccess.com/full/3239444.jpg" width="100%" height="100%"> -->
+    <article>
+          <h1>SKILLS</h1>
+          <li><i class="fa-brands fa-html5"></i>HTML</li>
+          <li><i class="fa-brands fa-css3-alt"></i>CSS</li>
+          <li><i class="fa-brands fa-js"></i>JAVASCRIPT</li>
+          <li><i class="fa-brands fa-bootstrap"></i>BOOTSTRAP</li>
+          <li><i class="fa-brands fa-git-alt"></i>GIT</li>
+    </article>
+    <article>
+      <h1>EDUCATION</h1>
+      <li class="education-class"><span>B.Tech Electronics & Communication Engineering (2020)</span></li>
+      <li class="education-class"><span>M.Tech Electronics & Communication Engineering (2022)</span></li>
+      
+  </article>
+  <article id="project-article">
+    <h1>PROJECTS</h1>
+    <li class="projects-class"><span><a href="">Smart Dustbin</a></span></li>
+    <li class="projects-class"><span><a href="">Skin Cancer Classification</a></span></li>
+    
+</article>
+
+<article id="research">
+  <h1>RESEARCH</h1>
+  <li class="research-class"><span><a href="">6G</a></span></li>
+  <li class="research-class"><span><a href="">Brain Computer Interface: Advances</a></span></li>
+  <li class="research-class"><span><a href="">Attempts At Mitigating Interference in Wireless Communication Systems</a></span></li>
+  
+</article>
+<article id="aboutme">
+  <h1>ABOUT ME</h1>
+  <span>I pursued my M.Tech in Electronics and Communication Engineering from Desh Bhagat University , Punjab, India in 2022.
+                    Prior to this , i completed his B.Tech in Electronics & Communication Engineering from Kashmir University,Jammu & Kashmir,India in 2020.
+                    I have done two major projects and have written 3 research papers. Apart from this i am Full Stack Web Developer with my specialization in Front-End.</span>
+</article>
+<form>
+  <h1>Get in touch with me.</h1>
+  <form>
+    <label>First Name</label>
+    <input type="text" placeholder="Enter First Name" >
+    <label>Last Name</label>
+    <input type="text" placeholder="Enter Last Name" >
+    <label>Phone</label>
+    <input  maxlength="10" type="number" placeholder="Enter 10 Digit Number"  >
+    <br>
+    <input type="submit" value="CONNECT">
+  </form>
+</div>
+</form>
+<footer>
+      All rights reserved &copy;
+</footer>
+  </body>
+</html>
