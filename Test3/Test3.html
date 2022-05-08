@@ -24,7 +24,24 @@
       body {
       margin: 0%;
       overflow-x: hidden;
-      background: linear-gradient(50deg, rgba(34, 219, 247, 0.897) ,rgba(237, 255, 72, 0.452) , rgba(27, 255, 118, 0.781) );
+      animation-name: backgroundcolorchange;
+      animation-duration: 5s;
+      animation-iteration-count: infinite;
+    }
+
+    @keyframes backgroundcolorchange{
+      0%{
+          background: radial-gradient(rgb(255, 43, 216) ,rgb(255, 255, 85));
+      }
+      25%{
+        background: radial-gradient(pink ,rgba(12, 255, 109, 0.893));
+      }
+      75%{
+        background: radial-gradient(gold ,red);
+      }
+      100%{
+        background: radial-gradient(blue ,white);
+      }
     }
 
     html {
@@ -275,17 +292,17 @@
 
       <ul>
         <li>
-          <a href="#"
+          <a href="https://www.facebook.com/altafbazaz/" target="_blank"
             ><button><i class="fa-brands fa-facebook"></i>Facebook</button></a
           >
         </li>
         <li>
-          <a href="#"
+          <a href="https://www.instagram.com/altaf._.bazaz/" target="_blank"
             ><button><i class="fa-brands fa-instagram"></i>Instagram</button></a
           >
         </li>
         <li>
-          <a href="#"
+          <a href="https://www.linkedin.com/feed/" target="_blank"
             ><button><i class="fa-brands fa-linkedin"></i>LinkedIn</button></a
           >
         </li>
