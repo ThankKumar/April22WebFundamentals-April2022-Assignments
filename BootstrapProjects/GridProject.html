@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+      <style>
+          @media screen and (max-width:680px)
+          {
+            .row2{
+                position: relative;
+                top: 450px;
+                right: 105px;
+            }
+          }
+      </style>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- <title>Bootstrap demo</title> -->
@@ -39,13 +49,13 @@
         <button class="btn btn-outline-primary" type="submit">Search</button>
       </form>
       <!-- grid system -->
-      <div class="container mt-5">
+      <div class="container .container-fluid mt-5">
         <div class="row">
           <div class="col-4 bg-light text-white">
             <div class="card" style="width: 18rem">
               <img
                 src="https://scontent-del1-2.xx.fbcdn.net/v/t39.30808-6/278001022_110952478244127_6084009492173514196_n.jpg?_nc_cat=104&ccb=1-6&_nc_sid=174925&_nc_ohc=UhfyrriuyFoAX_v2Sp9&_nc_oc=AQnMDfj90WW1rXpkkoQvMuAItEbA5XDQN9LjVdXK6myfbJKuu8LOeVZ3ssfZz_nAhMQ&_nc_ht=scontent-del1-2.xx&oh=00_AT9VGlANOIdyxpc9HyV433ROnJdLUqrkiRi6nh2srJ0vEQ&oe=6286DDB8"
-                class="card-img-top"
+                class="card-img-top .img-fluid"
                 alt="..."
               />
               <div style="margin-right: 15px;" class="card-body">
@@ -56,11 +66,11 @@
             </div>
           </div>
           <div class="col-8 bg-light text-black">
-              <div class="row2">
-                <div class="container">
+              <div class="row2  .container-fluid">
+                <div class="container .container-fluid">
                     <nav style="position:relative ;
                                 right: 20px;" class="navbar navbar-expand-lg bg-success text-white">
-                      <div class="container-fluid">
+                      <div class="container-fluid .container-fluid">
                         <a class="navbar-brand" href="#">User Details</a>
                       </div>
                     </nav>
@@ -68,7 +78,8 @@
              
               </div>
               <hr>
-              <div class="row2">
+              <div class="container .container-fluid">
+              <div class="row2 ">
                         <div class="row3">Microsoft</div>
                         <hr>
                         <div class="row3">Bangalore,In</div>
@@ -81,8 +92,9 @@
                         <hr>
                         <div class="row3">Next Promotion in 3 months.</div>
                         <hr>
-                        
+                    
               </div>
+            </div>
           </div>
         </div>
       </div>
