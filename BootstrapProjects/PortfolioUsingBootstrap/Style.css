@@ -1,0 +1,129 @@
+.nav-item {
+  position: relative;
+  left: 343px;
+  padding: 20px;
+}
+
+.navbar-brand {
+  margin-left: 26px;
+}
+
+.card {
+  text-align: center;
+  position: relative;
+  left: 0%;
+  top: 190px;
+  box-shadow: 3px 1px 23px black;
+
+}
+
+
+
+
+h3 {
+  text-decoration: 0px 1px 17px blue;
+}
+
+.col-sm-6 {
+  transform: translate(5%, -230%);
+}
+.col-sm-7 {
+  transform: translate(5%, -86%);
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.card > h1 {
+  color: white;
+}
+
+#main {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.projects {
+  margin-top: 3%;
+  padding: 32px;
+  width: 500px;
+  height: 300px;
+  border-radius: 30px;
+  text-align: center;
+  color: white;
+  font-weight: 100;
+  background-color: rgb(0, 0, 87);
+  transition: height 3s, margin-top 5s, 
+  margin-bottom 5s;
+}
+
+.projects:hover{
+  background-color: black;
+  color: white;
+  margin-top: 300px;
+  margin-bottom: 300px;
+}
+
+.container3{
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  top: 30px;
+  left: 3%;
+  justify-content: space-evenly;
+
+}
+
+.container3 > .card{
+      transform: scaleX(110%);
+      height: 300px;
+}
+
+.card-body a{
+  text-decoration: none;
+  font-size: 18;
+  color: white;
+  animation-name: anchor;
+  animation-iteration-count: infinite;
+  animation-duration: 2s;
+}
+
+@keyframes anchor {
+      0%{
+           color: black;
+      } 
+      100%{
+          color: white;
+      } 
+}
+
+
+
+
+
+@media screen and (max-width:680px) {
+       .nav-item{
+         transform: translateX(-90%);
+       }
+
+       .col-sm-6 > .card{
+         transform: translate(-30%);
+       }
+       
+       .col-sm-7 > .card{
+        transform: translate(-30%);
+      }
+      
+      .container3{
+        display: flex;
+        flex-direction: column;
+        transform: translate(10.7%,-20%);
+      }
+       
+}
