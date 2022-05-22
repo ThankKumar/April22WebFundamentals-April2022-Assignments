@@ -1,0 +1,86 @@
+.offcanvas-title {
+  position: relative;
+  left: 9rem;
+  color: brown;
+}
+
+body {
+   margin: 0%;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  left: 11rem;
+  top: 3rem;
+}
+
+.card {
+  margin-left: 2rem;
+}
+
+.rowS {
+  position: relative;
+  top: 5rem;
+  left: 20rem;
+}
+
+.row {
+  position: relative;
+  left: 22rem;
+  bottom: 15rem;
+}
+
+hr {
+  width: 200px;
+}
+
+.col-md-3{
+    position: relative;
+    top: 8rem;
+    left: 26rem;
+}
+.col-md-4{
+    position: relative;
+    top: 0rem;
+    left:39rem;
+}
+
+#chart_div{
+   transform: translate(45%,-35%);
+}
+
+
+
+@media screen and (max-width:680px){
+    #example{
+        position: relative;
+        right: 350px;
+    }
+    #chart_div{
+        position: relative;
+        width: 25%;
+        right: 300px;
+    }
+    .col-md-3{
+        transform: translateX(-220%);
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        left: 0rem;
+        top: 3rem;
+      }
+
+    .card {
+        margin-left: 2rem;
+        margin-top: 2rem;
+      }
+
+      body {
+        margin: 0%;
+     }
+}
