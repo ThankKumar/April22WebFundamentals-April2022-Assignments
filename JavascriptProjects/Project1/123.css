@@ -1,0 +1,51 @@
+body {
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+  background-color: rgba(54, 175, 115, 0.546);
+  font-size: 23;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('https://source.unsplash.com/1400x1200/?mountain,beach');
+  background-size: cover;
+  background-position: center;  
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 300;
+}
+
+.Ipt {
+  width: 100%;
+  height: 42;
+  border-radius: 20px;
+  box-shadow: 3px 3px 13px black;
+  margin-top: 15;
+}
+
+#Iptt {
+  width: 120;
+  position: relative;
+  top: 12;
+  left: 100;
+  background-color: rgb(1, 100, 16);
+  color: white;
+  font-size: 20;
+  font-weight: 300;
+  cursor: pointer;
+  border: none;
+}
+
+label {
+  position: relative;
+  top: 12;
+  left: 10;
+}
+
+.abc{
+    background-color: brown;
+    color: white;
+}
