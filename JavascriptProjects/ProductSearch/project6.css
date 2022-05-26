@@ -1,0 +1,95 @@
+body {
+  margin: 0%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("https://images.unsplash.com/photo-1506875644286-0fa3dc4df91f?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=400&ixid=MnwxfDB8MXxyYW5kb218MHx8Y29kZSx3YXRlcnx8fHx8fDE2NTM1NjM2Mzc&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1400");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.container {
+  box-shadow: 3px 5px 11px black;
+  background-color: rgb(8, 0, 45);
+  width: 350px;
+  height: 520px;
+  border-radius: 12px;
+  cursor: pointer;
+  color: white;
+  z-index:1 ;
+  opacity: 1;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+form input {
+  border-radius: 5px;
+  width: 100%;
+  height: 49px;
+  border: 2px solid black;
+  box-shadow: 2px 3px 7px black;
+  font-size: 18;
+}
+
+.fa-solid {
+  position: relative;
+  left: 90%;
+  color: black;
+}
+
+.container {
+  overflow-y: scroll;
+}
+
+.product-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.product {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-right: 70px;
+  margin-top: 12px;
+}
+
+.product-list h2 {
+  margin-left: 32px;
+}
+
+img {
+  border-radius: 22px;
+  object-fit: cover;
+  height: 120;
+}
+
+h2 {
+  text-shadow: 0px 0px 1px black;
+}
+
+.product-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-details{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.product-details h4{
+    display: flex;
+    flex-direction: column;
+    margin-left: 42px;
+}
