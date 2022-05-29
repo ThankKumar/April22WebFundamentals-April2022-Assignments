@@ -1,0 +1,152 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currency Converter</title>
+
+    <style>
+      body {
+        margin: 0%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url("https://images.unsplash.com/photo-1519046904884-53103b34b206?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=768&ixid=MnwxfDB8MXxyYW5kb218MHx8YmVhY2h8fHx8fHwxNjUzODE4ODAx&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1400");
+        background-position: center center;
+        background-size: cover;
+      }
+
+      .container {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        width: 300px;
+        height: auto;
+        box-shadow: 2px 3px 11px black;
+        background-color: rgba(250, 235, 215, 0.385);
+        border-radius: 20px;
+        animation-name: shake;
+        animation-duration: 12s;
+        animation-iteration-count: infinite;
+        animation-fill-mode: both;
+ 
+      }
+      .container > h2{
+          text-align: center;
+      }
+      @keyframes shake {
+        0% {
+          transform: translateX(-150%);
+        }
+
+        50% {
+          transform: translateX(150%);
+        }
+
+        100%{
+            transform: translateX(-150%);
+        }
+      }
+
+      .container:hover{
+          animation-play-state: paused;
+      }
+
+      input {
+        width: 200px;
+        height: 0px;
+        padding: 22px;
+        font-size: 23px;
+        margin-bottom: 12px;
+        margin-top: 12px;
+        border-radius: 23px;
+        margin-left: 52px;
+      }
+
+      button {
+        width: 120px;
+        padding: 7px;
+        text-align: center;
+        position: relative;
+        left: 90px;
+        border-radius: 20px;
+        background-color: black;
+        color: white;
+        cursor: pointer;
+        transition: color 1200ms ease-in;
+      }
+
+      button:hover {
+        background-color: darkblue;
+      }
+
+
+      /* responsive */
+      @media screen and (max-width:680px) {
+          .container{
+              animation-iteration-count: 0;
+              margin-left:  790px;
+              align-items: center;
+              justify-content: center;
+              
+              
+          }
+
+          button{
+              transform: translateX(-60%);
+          }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- html -->
+    <div class="container">
+      <!-- rupees to dollars -->
+      <h2>Rupees to Dollars</h2>
+      <input type="number" name="" id="input" />
+      <button class="convert" onclick="convert()">CONVERT</button>
+      <input id="result" />
+
+      <!-- rupees to euros -->
+      <h2>Rupees to Euros</h2>
+      <input type="number" name="" id="input2" />
+      <button class="convert" onclick="convert2()">CONVERT</button>
+      <input id="result2" />
+
+      <!-- rupees to pounds -->
+      <h2>Rupees to Pounds</h2>
+      <input type="number" name="" id="input3" />
+      <button class="convert" onclick="convert3()">CONVERT</button>
+      <input id="result3" />
+    </div>
+    <!-- javascript -->
+
+    <script>
+      function convert() {
+        let dataEnteredByUser = document.getElementById("input").value;
+        const factor = 0.013;
+        let convertedValue = factor * dataEnteredByUser;
+        let store = (document.getElementById("result").value =
+          convertedValue + " $");
+      }
+
+      // JAVASCRIPT 2
+
+      function convert2() {
+        let dataEnteredByUser2 = document.getElementById("input2").value;
+        const factor2 = 0.012;
+        let answer = factor2 * dataEnteredByUser2;
+        document.getElementById("result2").value = answer + " Euros";
+      }
+
+      // javascript 3
+
+      function convert3() {
+        let dataEnteredByUser3 = document.getElementById("input3").value;
+        const factor3 = 0.01;
+        let answer3 = factor3 * dataEnteredByUser3;
+        document.getElementById("result3").value = answer3 + " Pounds";
+      }
+    </script>
+  </body>
+</html>
