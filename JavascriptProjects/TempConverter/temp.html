@@ -1,0 +1,54 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Temp Converter</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        background: linear-gradient(12deg, limegreen , lightcoral, silver , yellow , green );
+        align-items: center;
+      }
+
+      input{
+          border-radius: 23px;
+          height: 32px;
+          border: 0px;
+      }
+
+      button{
+          padding: 20px;
+          border-radius: 20px;
+          background-color: antiquewhite;
+          cursor: pointer;
+      }
+
+      .container {
+        border: 1px solid black;
+        padding: 20px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <input type="number" placeholder="celcius" name="input" id="UserData" />
+      <button class="Convert" onclick="Conversion()">Convert</button>
+      <input type="text" name="result" id="result" placeholder="farenhit" />
+    </div>
+
+    <script>
+      let buttonGrabber = document
+        .querySelector(".Convert")
+        .addEventListener("click", function () {
+          let userInput = document.querySelector("#UserData").value;
+          let answer = (userInput * 1.8) + 32;
+          let resultField = (document.querySelector("#result").value =
+            answer + " F");
+
+        })
+    </script>
+  </body>
+</html>
