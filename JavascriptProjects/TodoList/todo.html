@@ -1,0 +1,117 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDo List</title>
+    <style>
+      body {
+        margin: 0%;
+        padding: 0%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: radial-gradient(lime, lightcoral);
+      }
+
+      .container {
+        display: flex;
+        flex-direction: column;
+        width: 30vw;
+        border: 1px solid black;
+        padding: 60px;
+        width: fit-content;
+        text-align: center;
+        margin-bottom: 100px;
+        background-color: rgb(7, 80, 107);
+      }
+
+      .btn {
+        width: 50px;
+        margin-left: 50px;
+        margin-top: 10px;
+        background-color: silver;
+        color: black;
+        width: 100;
+        border: none;
+        border-radius: 20px;
+        padding: 12px;
+        cursor: pointer;
+      }
+
+      #input {
+        width: 200;
+        height: 42px;
+        border-radius: 20px;
+      }
+
+      .heading {
+        color: white;
+      }
+
+      ul li {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        color: white;
+        
+      }
+
+      a {
+        color: red;
+        text-decoration: none;
+        font-size: 18;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="heading">ToDo List</h1>
+      <input type="text" placeholder="enter value" id="input" />
+      <h5 class="error"></h5>
+      <button class="btn" onclick="addItem()">Add</button>
+      <ul id="box"></ul>
+    </div>
+
+    <script>
+      let Con = document.querySelector(".container");
+
+      let addItem = function () {
+        const userVal = document.querySelector("#input").value;
+
+        if (userVal == "") {
+          document.querySelector(".error").textContent = "ENTER SOMETHING";
+        } else {
+          document.querySelector(".error").textContent = "";
+
+          let li = document.createElement("li");
+
+          li.textContent = userVal;
+
+          let position = box.firstElementChild;
+          box.insertBefore(li, position);
+  
+          let a = document.createElement("a");
+          a.textContent = "X";
+          a.href = "javascript:void(0)";
+          li.appendChild(a);
+        }
+      };
+
+      let box = document.querySelector("#box");
+
+      box.addEventListener("click", function (e) {
+        
+        let li = e.target.parentNode;
+        box.removeChild(li);
+      });
+
+      Con.addEventListener("click", function () {
+        setInterval(() => {
+          Con.style.backgroundColor = "green";
+        }, 500);
+      });
+    </script>
+  </body>
+</html>
