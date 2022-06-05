@@ -1,0 +1,47 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TEST</title>
+  </head>
+  <body>
+    <script>
+      // second
+      function cubeOfNumbers() {
+        for (let i = 0; i <= 5; i++) {
+          let result = i * i * i;
+          console.log(result);
+        }
+      }
+
+      cubeOfNumbers(6);
+
+      //   third
+      function displayOdd() {
+        for (let j = 0; j <= 9; j++) {
+          if (j % 2 == 0) {
+            console.log(j + "");
+            sum = sum + j;
+          }
+        }
+        console.log("sum of above numbers=" + sum);
+      }
+
+      displayOdd();
+
+      // fourth
+      const getNthPrime = (num) => {
+        let count = 0;
+        for (let i = 2; i < 1000; i++) {
+          if (i % 2 !== 0) ++count;
+          if (count === num) {
+            return i;
+          }
+        }
+      };
+
+      console.log(getNthPrime(2));
+    </script>
+  </body>
+</html>
