@@ -1,0 +1,194 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>test</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+  </head>
+  <body>
+    <h1>INSPECT -> CONSOLE</h1>
+    <script>
+              // question no. 1
+        var list = ["geek", "geekster", "geeky"];
+              // check if geekster is present in array
+        for (let i = 0; i < list.length; i++) {
+           if (list[i] == "geekster") {
+            console.log(true + ' geekster is present');
+          }
+      }
+             // finding the index of geekster
+             let indexOfGeekster = list.indexOf("geekster");
+          console.log(indexOfGeekster + " is the index of 'geekster'");
+
+              // removal of 'geekster'
+             if (indexOfGeekster > -1) {
+                  list.splice(indexOfGeekster, 1)
+             }
+             console.log(list);
+
+        //  question no.2
+
+            //  for Loop
+
+            // array of objects
+        var array = [
+            {id: 0, name: 'John', age: 20},
+            {id: 1, name: 'Jane', age: 22},
+            {id: 2, name: 'Bob', age: 24},
+            {id: 3, name: 'Ana', age: 26},
+        ];
+            //  just want to get the names of all of them
+        for(let i = 0; i < array.length; i++){
+            console.log(array[i].name);
+        }
+
+                    /*
+                    Output:
+                        John
+                        Jane
+                        Bob
+                        Ana
+                    */
+
+
+
+
+            // while Loop
+
+            // same aray to be used
+                    var i = 0;
+                    while(i < array.length) {
+                        console.log(array[i].name)
+                        i++
+                    }
+
+                    /*
+                    Output:
+                        John
+                        Jane
+                        Bob
+                        Ana
+                    */
+
+            // do/while Loop
+
+            // using same array
+                var i = 0;
+                do {
+                    console.log(array[i].name)
+                    i++
+                } while(i < array.length)
+                
+                /*
+                Output:
+                    John
+                    Jane
+                    Bob
+                    Ana
+                */
+
+            // for of
+
+            for (let index of array) {
+    console.log(index.name)
+}
+
+                /*
+                Output:
+                    John
+                    Jane
+                    Bob
+                    Ana
+                */
+
+            // for each
+                
+                array.forEach(function(profile, index, myArray) {
+                console.log(`Index: ${index}, Name: ${profile.name}`);
+            });
+
+            /*
+            Output:
+                John
+                Jane
+                Bob
+                Ana
+            */
+
+
+
+          //    question no. 3
+           var arr1 = [1,2,3,]; 
+           console.log(arr1.length);
+        //    3 or 4 depending on if there is any element after the end of last comma.
+           var arr2 = new Array(3);
+           console.log(arr2.length);
+        // 3
+
+           var arr3 = [1,2,3,4,5]
+           console.log(arr3.length);
+        // 5
+
+           var array = [ [1,2,3], [4,5,6]  ];
+           console.log(array.length);
+        // 2
+
+          let lengthOfZeroIndex = array[0].length
+          console.log(lengthOfZeroIndex);
+        // 3
+
+
+        // question no. 4
+
+        var arr= ['a','b','c','d'];
+
+        let indexOfb = arr.indexOf("b")
+        console.log(indexOfb);
+        // 1
+
+        
+        // question no .5 
+        let exampleArray = [1,'apple',true,3,5]
+    
+        // let us try to find the index of mango which doesnt exist in the exampleArray
+
+        console.log(exampleArray.indexOf("mango"));
+        // -1    =>    does not exist
+
+
+
+        // question no. 6
+
+        let array3 = [10, 60, 30, 40, 50, 70];
+
+        // sort the array
+
+        let sortedArray = array3.sort();
+    
+        // find the largest in sortedArray
+
+        function largest(sortedArray){
+            let maximum = sortedArray[0];
+
+            for (let i = 0; i < sortedArray.length; i++) {
+                 if (sortedArray[i] > maximum) {
+                    maximum = sortedArray[i]
+                 }
+
+                 return maximum
+                
+            }
+
+        }
+
+        console.log(largest(sortedArray));
+    </script>
+  </body>
+</html>
